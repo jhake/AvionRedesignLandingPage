@@ -80,8 +80,7 @@
 
 #about .about-image-container {
     max-width: 50vw;
-    width: 80%;
-    padding-right: 80px;
+    width: 95%;
 }
 
 #about .about-content {
@@ -220,6 +219,10 @@
 
 #contact {
     background: linear-gradient(180deg,#fff 0%,rgb(245, 245, 245) 100%);
+}
+
+#contact img {
+    max-width: 60px;
 }
 
 #contact h2 {    
