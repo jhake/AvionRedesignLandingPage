@@ -14,11 +14,25 @@
                 "use strict";
                 if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100 ) {
                     myNav.classList.add("scrolled");
-                } 
-                else {
+                } else {
                     myNav.classList.remove("scrolled");
                 }
             };
+            var menu = document.getElementById('menu');
+            var hamburger = document.getElementById('hamburger');
+            hamburger.addEventListener("click", function () {
+                if(menu.classList.contains("expanded-menu")){
+                    menu.classList.remove("expanded-menu")
+                } else {
+                    menu.classList.add("expanded-menu")
+                }
+            });
+            document.addEventListener('click', function(event) {
+            var isClickInside = menu.contains(event.target) || hamburger.contains(event.target);
+                if (!isClickInside) {
+                    menu.classList.remove("expanded-menu")
+                }
+            });
         }
     </script>
 </head>
@@ -26,12 +40,13 @@
     <header id="header">
         <div class="container">
             <img src="assets/avion_school_logo.png">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Process</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="btn btn-hollow">ENROLL NOW</a></li>
+            <ul id="menu" class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Process</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./enroll.html" class="btn btn-hollow">ENROLL NOW</a></li>
             </ul>
+            <div id="hamburger" class="hamburger"><img src="assets/hamburger.png"></div>
         </div>
     </header>
 
@@ -47,7 +62,7 @@
                 <p>
                     Learn the fundamentals of writing code and the skills of the best software engineers. We teach you how to build software, work with teams and apply for top software jobs.
                 </p>
-                <a href="#" class="btn btn-solid">
+                <a href="./enroll.html" class="btn btn-solid">
                     ENROLL NOW
                 </a>
             </div>
@@ -178,7 +193,7 @@
     <footer>
         <div class="container">
             <h2>Ready to learn?</h2>
-            <a href="#" class="btn btn-solid">
+            <a href="./enroll.html" class="btn btn-solid">
                 ENROLL NOW
             </a>
             <div class="footer-btm">
