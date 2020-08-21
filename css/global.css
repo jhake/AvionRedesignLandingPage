@@ -57,11 +57,16 @@ header .container {
 }
 
 header img {
-    max-height: 25px;
+    max-height: 30px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
 }
 
 header li {
-    display: inline;
+    list-style: none;
     margin: 0 16px;
     font-weight: 500;
 }
