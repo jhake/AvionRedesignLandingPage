@@ -11,27 +11,33 @@
     margin: 0 auto;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 9999px) {
     .container {
-        width: 540px;
+        width: 1140px;
     }
 }
 
-@media (min-width: 768px) {
-    .container {
-        width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
+@media (max-width: 1200px) {
     .container {
         width: 960px;
     }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 992px) {
     .container {
-        width: 1140px;
+        width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
     }
 }
 
@@ -76,6 +82,63 @@ header a {
     color: black;
 }
 
+header .hamburger {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: 24px 24px;
+    width: 78px;
+    height: 78px;
+    border-radius: 5px;
+}
+
+header .hamburger:hover {
+    background: #2d4e4c33;
+    transition: background-color 50ms linear;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+    header .hamburger {
+        display: block;
+    }
+    header .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        padding-top: 64px;
+        padding-bottom: 16px;
+        background: white;
+        box-shadow: 90px 7px 90px 0 rgba(110,123,131,.5);
+        border-radius: 5px;
+    }
+    header .menu li {
+        padding: 16px 24px;
+        font-size: 24px;
+        margin: 0;
+    }    
+    header .menu li:hover {
+        background: #2d4e4c33;
+    }
+    header .expanded-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+}
+
 .btn {
     padding: 8px 16px;
     border: 1px solid grey;
@@ -85,18 +148,28 @@ header a {
     box-shadow: 12px 7px 90px 0 rgba(110,123,131,.3);
 }
 
-.btn-hollow{
+.btn-hollow {
     background: none;
     color: black;
 }
 
-.btn-solid{
+.btn-hollow:hover {
+    background-color: #2d4e4c;
+    color: white;
+}
+
+.btn-solid {
     background-color: #2d4e4c;
     border: none;
     color: white;
 }
 
-footer  {    
+.btn-solid:hover {
+    background: white;
+    color: black;
+}
+
+footer {    
     background: rgb(0,0,0);
 }
 
