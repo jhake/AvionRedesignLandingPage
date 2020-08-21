@@ -3,11 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enroll</title>
+    <title>Enrollment Form | Avion School</title>
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/enroll.css">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
 </head>
 <body>
     <!-- REMEMBER TO PUT CONTAINERS INSIDE EACH SECTION LIKE IN INDEX.HTML -->
+    <section id="surveyForm">
+        <div class="surveyFormTop">
+            <div class="surveyLogo">
+                <img src="assets/avion_school_logo.png" alt="Avion School Logo">
+
+            </div>
+
+            <div class="formIntro">
+            <h1>Enrollment Form</h1>
+            <br>
+            <h2>Congratulations on taking the first step to a career in software development! Start by filling up this application form, and our team will reach out to guide you through the process. 🚀</h2>
+            </div>
+            
+        </div>
+      
+    
+         <form action="index.html" method="post">
+    
+            <div class="form-group">
+                <p>1. What is your full name? *</p>
+                <input type="text" name="name" class="full-name" placeholder="Name"><br>
+            </div>
+
+            <div class="form-group">
+                <p>2. Are you 18 years old or older? *</p><br>
+                <input type="radio" name="age18" id="yes" value="yes" class="input-radio">
+                <label for="yes">Yes</label><br>
+                <input type="radio" name="age18" id="no" value="no" class="input-radio">
+                <label for="no">No</label><br>
+            </div>
+    
+            <div class="form-group">
+                <p>3. What is your email address? *</p>
+                <input type="email" name="email" class="e-mail" placeholder="Email"><br>
+            </div>
+    
+            <div class="form-group">
+                <p>4. What is your cellphone number? *</p>
+                <input type="tel" name="cellphoneNumber" class="cellphone-number" placeholder="0905 123 4567"><br>
+            </div>
+
+            <div class="form-group">
+                <p>5. Do you currently live in the Philippines? *</p><br>
+                <input type="radio" name="liveinph" id="yes" value="yes" class="input-radio">
+                <label for="yes">Yes</label><br>
+                <input type="radio" name="liveinph" id="no" value="no" class="input-radio">
+                <label for="no">No</label><br>
+            </div>
+
+            <div class="form-group">
+                <p>6. What is your home address? *</p>
+                <input type="text" name="homeAddress" class="home-address" placeholder="Home Address"><br>
+            </div>
+
+            <div class="form-group">
+                <p>7. What type of class do you wish to enroll in? *</p><br>
+                <input type="radio" name="classtype" id="full-time" value="full-time" class="input-radio">
+                <label for="full-time"><span><strong>Full-time Course:</strong></span> M-F (9am-6pm)</label><br>
+                <input type="radio" name="classtype" id="part-time" value="part-time" class="input-radio">
+                <label for="part-time"><span><strong>Part-time Course:</strong></span> M-F (7pm-9pm) & Sat (9pm-1pm)</label><br>
+            </div>
+
+            <div class="form-group">
+                <p>8. Will you be able to attend for 95% or more of our live sessions in their entirety? This question is required. *</p>
+                <p class="secondpar">Avion School's full-time program runs weekdays from 10am to 6pm for around 12 weeks, depending on holiday schedules. </p><br>
+                <input type="radio" name="attend" id="yes" value="yes" class="input-radio">
+                <label for="yes">Yes</label><br>
+                <input type="radio" name="attend" id="no" value="no" class="input-radio">
+                <label for="no">No</label><br>
+            </div>
+
+            <div class="form-group">
+                <p>9. Do you have any other commitments that will conflict with the live, mandatory course hours? *</p>
+                <p class="secondpar">We're referring to standing commitments here: we know life happens! Avion School's curriculum is built on attending live lectures, working with instructors and peers, and pair-programming.</p><br>
+                <input type="radio" name="commitments" id="yes" value="yes" class="input-radio">
+                <label for="yes">Yes</label><br>
+                <input type="radio" name="commitments" id="no" value="no" class="input-radio">
+                <label for="no">No</label><br>
+            </div>
+
+            <div class="form-group">
+                <p>10. If accepted, which payment method will you be using? *</p><br>
+                <input type="radio" name="payment" id="income-share" value="income-share" class="input-radio">
+                <label for="income-share"><span><strong>Income Share Agreement Option:</strong></span> Php 0 upfront + 2 year, 17% income share agreement</label><br>
+                <input type="radio" name="payment" id="upfront" value="upfront" class="input-radio">
+                <label for="upfront"><span><strong>Upfront Payment:</strong></span> Php 80,000</label><br>
+            </div>
+
+            <div class="form-group">
+                <p>11. Which of the following best describes your programming experience? *</p>
+                <p class="secondpar">This will not affect whether we accept you or not. We're just trying to understand the experience of those applying to our school.</p><br>
+                <p class="thirdpar">Choose as many as you like:</p>
+                <div class="checkboxChoices">
+                    <label><input type="checkbox" name="programExp" value="no-experience" class="input-checkbox"><span><strong>No experience:</strong></span> but I’m excited to start learning</label><br>
+                    <label><input type="checkbox" name="programExp" value="beginning-learner" class="input-checkbox"><span><strong>Beginning learner:</strong></span> I’ve played with some introductory coding lessons and tutorials</label><br>
+                    <label><input type="checkbox" name="programExp" value="intermediate-learner" class="input-checkbox"><span><strong>Intermediate learner:</strong></span> I have completed some coding classes or tutorials</label><br>
+                    <label><input type="checkbox" name="programExp" value="advanced" class="input-checkbox"><span><strong>Advanced:</strong></span> I can create simple applications</label><br>
+                    <label><input type="checkbox" name="programExp" value="professional" class="input-checkbox"><span><strong>Professional:</strong></span> I am an experienced software engineer and want to upgrade my skills</label><br>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>12. Who referred you/how did you hear of Avion School? </p>
+                <p class="secondpar">Please enter the person or organization's name here.</p>
+                <input type="text" name="referral" class="who-refer" placeholder="Name or Organization"><br>
+            </div>
+
+            <div class="form-group">
+                <p>13. Do you have a LinkedIn profile? </p>
+                <p class="secondpar">Please enter the URL. If none, leave blank.</p>
+                <input type="text" name="linkedIn" class="linkedIn-page" placeholder="LinkedIn Page"><br>
+            </div>
+
+            <div class="form-group">
+                <p>14. If you have a GitHub username, enter it here: </p>
+                <p class="secondpar">Please only enter your username, and not the full URL to your GitHub profile. If none, leave blank.</p>
+                <input type="text" name="github" class="github-page" placeholder="Github Username"><br>
+            </div>
+
+            <div class="form-group">
+                <p>15. Avion School runs classes every four to eight weeks. How soon are you looking to start class? *</p><br>
+                <input type="radio" name="startclass" id="four-weeks" value="four-weeks" class="input-radio">
+                <label for="four-weeks">Within the next four weeks</label><br>
+                <input type="radio" name="startclass" id="three-months" value="three-months" class="input-radio">
+                <label for="three-months">Within the next three months</label><br>
+                <input type="radio" name="startclass" id="three-to-six-months" value="three-to-six-months" class="input-radio">
+                <label for="three-to-six-months">Within the next three to six months</label><br>
+                <input type="radio" name="startclass" id="not-sure" value="not-sure" class="input-radio">
+                <label for="not-sure">I’m not sure</label><br>
+            </div>
+
+                
+            <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+      </form>  
+    </section> 
 </body>
 </html>
