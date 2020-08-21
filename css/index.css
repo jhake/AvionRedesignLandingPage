@@ -1,5 +1,25 @@
 #banner {
-    background: linear-gradient(180deg,#fff 0%,rgb(245, 245, 245) 100%);
+    background-image: url("../assets/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+}
+
+#banner::after {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #ffffffc0 50%, #739b9d30 150%);
+    z-index: -2;
+    backdrop-filter: blur(2px);
+    pointer-events: none;
 }
 
 #banner .container {
@@ -9,8 +29,12 @@
     height: 100vh;
 }
 
-#banner .banner-image-container {
-    max-width: 50vw;
+#banner .banner-content {
+    text-align: center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #banner img {
@@ -18,21 +42,32 @@
 }
 
 #banner h1 {
-    font-size: 42px;
-    width: 80%;
-    padding-bottom: 8px;
+    font-size: 80px;
+    width: 100%;
+    padding-bottom: 32px;
+    line-height: 96px;
 }
 
 #banner .banner-highlight {
-    font-size: 24px;
-    color: #cc302b;
+    font-size: 32px;
+    color: #2d4e4c;
 }
 
 #banner p {
-    font-size: 18px;
-    width: 80%;
-    padding-bottom: 40px;
+    font-size: 24px;
+    width: 90%;
+    padding-bottom: 64px;
     padding-top: 24px;
+}
+
+#banner .btn {
+    font-size: 24px;
+    padding: 16px 40px;
+}
+
+#about {
+    margin-top: 100vh;
+    background: rgb(255,255,255);
 }
 
 #about .container {
@@ -44,7 +79,7 @@
 
 #about .about-image-container {
     max-width: 50vw;
-    width: 90%;
+    width: 80%;
     padding-right: 80px;
 }
 
@@ -57,25 +92,27 @@
 }
 
 #about h2 {
+    font-size: 32px;
     padding-bottom: 16px;
 }
 
 #about p {
-    font-size: 14px;
-    width: 70%;
-    margin-bottom: 16px;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 32px;
 }
 
 #about ul {
     list-style: none;
-    width: 70%;
+    width: 80%;
 }
 
 #about li {
-    padding: 12px 32px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 32px;
     box-shadow: 12px 7px 90px 0 rgba(110,123,131,.3);
-    margin-bottom: 8px;
-    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 #quote {
@@ -91,8 +128,18 @@
 }
 
 #quote blockquote {
-    width: 70%;
+    width: 80%;
     margin-bottom: 16px;
+    font-size: 24px;
+}
+
+#quote span {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#services {
+    background: rgb(255, 255, 255);
 }
 
 #services .container {
@@ -110,6 +157,10 @@
 
 #students h2 {
     margin-bottom: 64px;
+}
+
+#students {
+    background: rgb(255, 255, 255);
 }
 
 #students .container {
