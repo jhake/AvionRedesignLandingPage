@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Become a software engineer in 12 weeks | Avion School</title>
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <script>
+        window.onload = function() {
+            var myNav = document.getElementById('header');
+            window.onscroll = function () { 
+                "use strict";
+                if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100 ) {
+                    myNav.classList.add("scrolled");
+                } 
+                else {
+                    myNav.classList.remove("scrolled");
+                }
+            };
+        }
+    </script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
-            <img src="assets/logo.png">
+            <img src="assets/avion_school_logo.png">
             <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Process</a></li>
@@ -32,20 +47,17 @@
                 <p>
                     Learn the fundamentals of writing code and the skills of the best software engineers. We teach you how to build software, work with teams and apply for top software jobs.
                 </p>
-                <a class="btn btn-solid">
+                <a href="#" class="btn btn-solid">
                     ENROLL NOW
                 </a>
             </div>
-            <div class="banner-image-container">
-                <img src="assets/software-team.png">
-            </div>
         </div>        
     </section>
-    
+
     <section id="about">
         <div class="container">
             <div class="about-image-container">
-                <img src="assets/course.png">
+                <img src="assets/about.png">
             </div>
             <div class="about-content">
                 <h2>
@@ -82,18 +94,21 @@
     <section id="services">
         <div class="container">
             <div class="service-block">
+                <img src="assets/user.svg">
                 <h3>Admissions</h3>
                 <p>
                     We took the time to make admissions easy: an online application, a 1:1 video interview, a tech challenge and you’re done.
                 </p>
             </div>
             <div class="service-block">
+                <img src="assets/gamepad.svg">
                 <h3>Bootcamp</h3>
                 <p>
                     Our course is structured with real world problems in mind. You learn only what’s needed and get taught by top-notch software engineers.
                 </p>
             </div>
             <div class="service-block">
+                <img src="assets/award.svg">
                 <h3>Career</h3>
                 <p>
                     Tech startups are always on the lookout for engineers which is why we’ve partnered with all the best startups to make finding a job easy.
@@ -102,20 +117,57 @@
         </div>        
     </section>
     
+    <section id="students">
+        <div class="container">
+            <h2>What our students are saying</h2>
+            <div class="testimonials-container">
+                <div class="student-block">
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ex ante, lobortis at mauris eget, mollis aliquam orci. Quisque bibendum vitae ex sed porttitor. Cras eu dictum justo. Etiam blandit imperdiet consequat. Proin nisl libero, ultrices quis mattis vitae, porttitor a ligula."
+                    </p>
+                    <div class="student-profile">
+                        <img src="assets/student-1.jpg">
+                        <div class="student-title">
+                            <h3>Rommel Monsayac</h3>
+                            <span>Senior Developer</span>
+                            <span>PayMongo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="student-block">
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ex ante, lobortis at mauris eget, mollis aliquam orci. Quisque bibendum vitae ex sed porttitor. Cras eu dictum justo. Etiam blandit imperdiet consequat. Proin nisl libero, ultrices quis mattis vitae, porttitor a ligula."
+                    </p>
+                    <div class="student-profile">
+                        <img src="assets/student-2.jpg">
+                        <div class="student-title">
+                            <h3>Jhake Aquino</h3>
+                            <span>Junior Developer</span>
+                            <span>PayMongo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
             <p>Whether you have questions or you would just like to say hello, drop us a note.</p>
             <div class="contacts">
                 <div class="contact-block">
+                    <img src="assets/iphone.svg">
                     <p>Call Us</p>
                     <h3>+63 (917) 317-3012</h3>
                 </div>
                 <div class="contact-block">
+                    <img src="assets/email.svg">
                     <p>Email</p>
                     <h3>hello@avionschool.com</h3>
                 </div>
                 <div class="contact-block">
+                    <img src="assets/placeholder.svg">
                     <p>Location</p>
                     <h3>Bonifacio Global City, Taguig</h3>
                 </div>
@@ -126,11 +178,12 @@
     <footer>
         <div class="container">
             <h2>Ready to learn?</h2>
-            <a class="btn btn-solid">
+            <a href="#" class="btn btn-solid">
                 ENROLL NOW
             </a>
             <div class="footer-btm">
                 <p>© Avion School 2020.</p>
+                <p class="icon-source">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
             </div>
         </div>
     </footer>
