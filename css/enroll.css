@@ -84,11 +84,15 @@ input[type=radio] {
     font-size: smaller;
 }
 
-.submit-button {
+/*.submit-button {
     background-color: #2d4e4c;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
+  }*/
+
+.btn-solid:hover {
+    border: 1px solid grey;
+}
