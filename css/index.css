@@ -313,7 +313,8 @@
 
 #curriculum h2 {
     font-size: 32px;
-    margin-bottom: 64px;
+    margin-bottom: 24px;
+    text-align: center;
 }
 
 #curriculum {
@@ -356,13 +357,13 @@
 }
 
 .curriculum-block p {
-    font-size: 14px;
-    
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .curriculum-block h3 {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .curriculum-block span {
@@ -382,6 +383,15 @@
 }
 
 @media (max-width: 1200px) {
+    .curriculum-block h3 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .curriculum-block {
+        font-size: 24px;
+        font-weight: 600;
+        padding: 4px 4px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -389,12 +399,22 @@
         font-size: 24px;
         margin-bottom: 16px;
     }
+    #curriculum h3 {
+        font-size: 20px;
+    }
     #curriculum p {
         font-size: 14px;
+    }
+    #curriculum .curriculum-block {
+        padding: 10px 10px;
     }
 }
 
 @media (max-width: 768px) {
+    .curriculum-block p {
+        font-size: 10px;
+        
+    }
     #curriculum .curriculum-block-container {
         flex-direction: column;
     }
@@ -403,15 +423,18 @@
         margin: 0;
         padding: 10px 10px;
         flex-direction: column;
-        
-        
     }
     #curriculum .curriculum-block-3 {
         justify-content: center;
         align-items: center;
-        
     }
     
+}
+
+@media (max-width: 576px) {
+    .curriculum-block p {
+        font-size: 8px;
+    }
 }
 
 #students h2 {
