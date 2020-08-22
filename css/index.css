@@ -311,6 +311,80 @@
 @media (max-width: 576px) {
 }
 
+#learn {
+    background: rgb(245, 245, 245);
+}
+
+#learn img {
+    max-height: 96px;
+    margin-bottom: 16px;
+    filter: invert(24%) sepia(43%) saturate(357%) hue-rotate(127deg) brightness(100%) contrast(92%);
+    margin-right: 24px;
+}
+
+#learn .container {
+    text-align: left;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0;
+}
+
+#learn .learn-block {
+    width: 100%;
+    padding: 24px 24px;
+    display: flex;
+}
+
+#learn h2 {
+    font-size: 48px;
+    padding-bottom: 16px;
+}
+
+#learn h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+#learn p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+    #learn .learn-block {
+        flex-direction: column;
+        text-align: center;
+    }
+    #learn img {
+        max-height: 80px;
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+    #learn h2 {
+        font-size: 32px;
+        padding-bottom: 16px;
+    }
+    #learn h3 {
+        font-size: 16;
+        margin-bottom: 8px;
+    }
+    #learn p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 576px) {
+}
+
 #students h2 {
     font-size: 32px;
     margin-bottom: 64px;
