@@ -340,6 +340,7 @@
 #learn h2 {
     font-size: 48px;
     padding-bottom: 16px;
+    text-align: center;
 }
 
 #learn h3 {
@@ -383,6 +384,18 @@
 }
 
 @media (max-width: 576px) {
+    #learn h2 {
+        font-size: 24px;
+        padding-bottom: 16px;
+    }
+    #learn h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    #learn p {
+        font-size: 14px;
+        font-weight: 300;
+    }
 }
 
 #curriculum h2 {
@@ -493,7 +506,8 @@
         flex-direction: column;
     }
     #curriculum .curriculum-block {
-        width: 60%;
+        width: 100%;
+        max-width: 300px;
         margin: 0;
         padding: 10px 10px;
         flex-direction: column;
